@@ -6,5 +6,5 @@ try:
 except NameError:
     BASE_DIR = Path.cwd()
 
-MODEL_PATH = BASE_DIR / "model.joblib"
+MODEL_PATH = BASE_DIR / "model2.joblib"
 model = joblib.load(MODEL_PATH)
