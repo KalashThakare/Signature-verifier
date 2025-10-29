@@ -14,6 +14,15 @@ export default function Team() {
       job: "Prof. ",
     },
     {
+      name: "Pravin Dwaramwar",
+      role: "Project Supervisor",
+      description:
+        "Assistant Professor at RCOEM with expertise in Computer Vision, Machine Learning, and Deep Learning. Provided invaluable guidance and mentorship throughout the project development.",
+      email: "",
+      specialization: "Computer Vision & Deep Learning",
+      job: "Prof. ",
+    },
+    {
       name: "Jayesh Rajbhar",
       role: "Developer",
       description:
@@ -56,13 +65,16 @@ export default function Team() {
             </p>
           </div>
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-8 text-[#EDEDED] text-center">Project Supervisor</h2>
-            <TeamMemberCard member={teamMembers[0]} isSupervisor={true} />
+            <h2 className="text-2xl  font-bold mb-8 text-[#EDEDED] text-center">Project Supervisor</h2>
+            <div className="mb-6">
+              <TeamMemberCard member={teamMembers[0]} isSupervisor={true} />
+            </div>
+            <TeamMemberCard member={teamMembers[1]} isSupervisor={true} />
           </div>
           <div>
             <h2 className="text-2xl font-bold mb-8 text-[#EDEDED] text-center">Development Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {teamMembers.slice(1).map((member) => (
+              {teamMembers.slice(2).map((member) => (
                 <TeamMemberCard key={member.name} member={member} />
               ))}
             </div>

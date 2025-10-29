@@ -2,13 +2,7 @@ import cv2
 import numpy as np
 
 def preprocess_image(img_path: str,out_size=(128, 256)):
-    """
-    Preprocessing the image:
-    - loading in grayscale
-    - resizing to fixed size
-    - applying thresholding + noise removal
-    Returns: binary numpy image ready for feature extraction
-    """
+    #image in grayscale
     img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
     if img is None:
         raise ValueError(f"Cannot read {img_path}")
