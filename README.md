@@ -201,7 +201,7 @@ This project was developed for academic purposes as part of the 5th semester ML 
 
 ## 📚 References
 
-- CEDAR Signature Dataset: [Kaggle](https://www.kaggle.com/)
+- CEDAR Signature Dataset: [Kaggle Dataset](https://www.kaggle.com/datasets/shreelakshmigp/cedardataset)
 - FastAPI Documentation: https://fastapi.tiangolo.com/
 - Next.js Documentation: https://nextjs.org/docs
 - scikit-learn Documentation: https://scikit-learn.org/
